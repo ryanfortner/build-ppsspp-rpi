@@ -4,6 +4,8 @@ set -e
 
 export DEBIAN_FRONTEND="noninteractive"
 
+cd /github/workspace
+
 function error {
   echo -e "\\e[91m$1\\e[39m"
   exit 1
