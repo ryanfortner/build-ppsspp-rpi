@@ -11,9 +11,9 @@ function error {
   exit 1
 }
 
-sudo apt-get update
-sudo apt-get upgrade -y --with-new-pkgs
-sudo apt-get install zip unzip git build-essential clang cmake libgl1-mesa-dev libsdl2-dev libvulkan-dev -y
+apt-get update
+apt-get upgrade -y --with-new-pkgs
+apt-get install zip unzip git build-essential clang cmake libgl1-mesa-dev libsdl2-dev libvulkan-dev -y
 
 rm -rf ./build*/
 mkdir -p build-arm64
